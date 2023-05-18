@@ -1,4 +1,5 @@
-#include <iostream>
+#ifndef LISTA_ENLAZADA_H
+#define LISTA_ENLAZADA_H
 using namespace std;
 
 struct nodo{
@@ -19,7 +20,6 @@ struct nodo_cabeza{
     nodo *primero;
     int cantidad;
 };
-
 
 TNodo crearNodo(int c, string n){
     TNodo nodo = new(struct nodo);
@@ -139,8 +139,6 @@ bool existeElementoNombre(Tlista lista, string nombre){
 return(log);
 }
 
-
-
 Tlista buscarElementoClave(Tlista lista, int valor) {
     Tlista q = lista;
     while(q!=NULL) {
@@ -232,6 +230,6 @@ void eliminaRepetidos(Tlista &lista, int valor)
         }
 
     }// fin del while
-
     cout<<"\n\n Valores eliminados..!"<<endl;
 }
+#endif // LISTA_ENLAZADA_H

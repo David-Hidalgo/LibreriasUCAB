@@ -67,7 +67,7 @@ int main() {
 
                case 1:
                     pedir_datos(_dato, nombre);   
-                    insertarInicio(*lista, _dato, nombre);
+                    insertarInicio(lista, _dato, nombre);
                     system("tput clear"); 
                     break;
 
